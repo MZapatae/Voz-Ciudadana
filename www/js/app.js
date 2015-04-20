@@ -73,6 +73,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         templateUrl: 'templates/tab-help.html'
       }
     }
+  })
+  .state('tab.disclaimer', {
+    url: '/help/disclaimer',
+    views: {
+      'tab-help': {
+        templateUrl: '/templates/disclaimer.html'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback
