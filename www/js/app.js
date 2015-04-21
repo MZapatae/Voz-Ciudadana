@@ -63,6 +63,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.form', {
+    url: '/proyects/form',
+    views: {
+      'tab-proyects': {
+        templateUrl: 'templates/form.html'
+      }
+    }
+  })
     
   .state('tab.help', {
     url: '/help',
