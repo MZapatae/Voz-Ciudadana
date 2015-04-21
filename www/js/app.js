@@ -78,10 +78,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/help/disclaimer',
     views: {
       'tab-help': {
-        templateUrl: '/templates/disclaimer.html'
+        templateUrl: 'templates/disclaimer.html'
       }
     }
-  });
+  })
+
+  ;
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/home');
