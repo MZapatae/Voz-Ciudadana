@@ -36,6 +36,16 @@ angular.module('starter.controllers', [])
       }
     }
   }
-);
+)
+.controller('ProyectsController', function($scope) {
+  $scope.share = function(){
+      var message = {
+        text: "Yo Apoyo la #LeyDeDisminucionDeDietaParlamentaria. Y tu que esperas para apoyarla? #VozCiudadana"
+      };
+      window.socialmessage.send(message);
+  };
+
+});
+
 
 

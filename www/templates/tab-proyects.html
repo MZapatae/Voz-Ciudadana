@@ -1,4 +1,4 @@
-<ion-view view-title="Proyectos">
+<ion-view view-title="Proyectos" ng-controller="ProyectsController">
   <ion-content padding="true">
     <div class="list card">
             <div class="item">
@@ -22,7 +22,7 @@
                     Apoya
                 </a>
 
-                <a class="tab-item" href="#">
+                <a class="tab-item" ng-click="share()">
                     <i class="icon ion-share"></i>
                     Comparte
                 </a>
