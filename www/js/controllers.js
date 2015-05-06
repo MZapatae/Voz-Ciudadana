@@ -1,7 +1,6 @@
 angular.module('starter.controllers', [])
 
 .controller('FormController', function($scope, $ionicPopup, $timeout) {
-
   // Triggered on a button click, or some other target
   $scope.showPopup = function() {
 
@@ -43,9 +42,17 @@ angular.module('starter.controllers', [])
         text: "Yo Apoyo la #LeyDeDisminucionDeDietaParlamentaria. Y tu que esperas para apoyarla? #VozCiudadana"
       };
       window.socialmessage.send(message);
-  };
+  }
+})
+.controller('BackendController', ['$scope','Backend', function($scope,Backend) {
+  Backend.getHome().success(function(data) {
+    $scope.homeText = data.Title;
+  });
+}])
 
-});
+
+
+;
 
 
 
